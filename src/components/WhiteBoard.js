@@ -5,7 +5,7 @@ import UserList from "./UserList";
 
 // In development you have to point the react front end explicitly to your express server which will be running on a different port than the React Dev Server
 
-const socket = socketIOClient("http://your-local-ip:4010"); //development;
+const socket = socketIOClient("http://192.168.7.125.:4010"); //development;
 
 // In production, the express server will be the one to serve the react application so we can leave out the connection string argument, which will allow the socket to default to it origin (theoretically your express server)
 
@@ -17,7 +17,7 @@ export default class WhiteBoard extends Component {
     this.state = {
       id: null,
       drawing: false,
-      currentColor: "red",
+      currentColor: "skyblue",
       windowHeight: window.innerHeight,
       windowWidth: window.innerWidth,
       cleared: false,

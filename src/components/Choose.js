@@ -11,7 +11,7 @@ export default class Choose extends Component {
 							<h1 className="appname just">Draw</h1>
 							<h1 className="appname drw">Things</h1>
 
-							<img className="logo" src={logo} />
+							<img className="logo" src={logo} alt="logo"/>
 						</div>
 						<div>
 							<div className="input-container">
